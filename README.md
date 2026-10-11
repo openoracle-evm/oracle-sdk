@@ -4,7 +4,7 @@
 
 - **Real equity prices** from [Pyth](https://pyth.network) (Hermes API)
 - **Market hours** — parses Pyth schedules incl. holidays and half days
-- **Uniswap v3 pool prices** via [viem](https://viem.sh)
+- **Pool prices** via [viem](https://viem.sh)
 - **Premium / discount** of a tokenized stock vs. its reference price
 - **StockGuardHook fee quotes** — TypeScript port of [`stockguard-hook`](https://github.com/YOUR_ORG/stockguard-hook)
 
@@ -26,7 +26,7 @@ console.log(nvda.price, marketStatus(NYSE_SCHEDULE));     // 182.41 { open: true
 console.log(premiumBps(183.10, nvda.price));              // +37.8 bps
 ```
 
-Read a Uniswap v3 pool:
+Read a pool:
 
 ```ts
 import { createPublicClient, http } from "viem";
